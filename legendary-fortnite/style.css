@@ -271,6 +271,16 @@ p {
   border-color: #f7c08a; 
 } 
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+}
+
 /* Footer */ 
 
 #main-footer { 
