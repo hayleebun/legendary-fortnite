@@ -7,3 +7,5 @@ function playVideo() {
 function pauseVideo() {
   video.pause();
 }
+
+//We added video playback functions// 
