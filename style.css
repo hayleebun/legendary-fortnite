@@ -182,7 +182,7 @@ p {
 /* Features */ 
 
 .box { 
-  float: right; 
+  float: left; 
   width: 33.3%; 
   padding: 50px; 
   text-align:center; 
@@ -232,6 +232,13 @@ th, td {
   text-align: center;
 }
 
+/* Ronin's Page */
+
+#ronin-intro {
+  text-align: center;
+  color: #008080;
+  padding: 20px;
+}
 /* Footer */ 
 
 #main-footer { 
