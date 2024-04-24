@@ -74,7 +74,7 @@ p {
 } 
 
 .bg-primary { 
-  background: #f7c08a; 
+  background: #008080; 
   color: #333; 
 } 
 
@@ -127,7 +127,7 @@ p {
 #navbar ul li a:hover,  
 #navbar ul li a.current { 
   background: #444; 
-  color: #f7c08a; 
+  color: #008080; 
 } 
 
 /* Showcase */ 
@@ -211,34 +211,6 @@ p {
   float: left; 
   width: 50%; 
   min-height: 100%; 
-} 
-
-/* Testimonials */ 
-
-#testimonials { 
-  height: 600px; 
-  background: url('../img/test-bg.jpg') no-repeat center center/cover; 
-  padding-top: 100px; 
-} 
-
-#testimonials h2 { 
-  color: #fff; 
-  text-align: center; 
-  padding-bottom: 40px; 
-} 
-
-#testimonials .testimonial { 
-  padding: 20px; 
-  margin-bottom: 40px; 
-  border-radius: 5px; 
-  opacity: 0.9; 
-} 
-
-#testimonials .testimonial img { 
-  width: 100px; 
-  float: left; 
-  margin-right: 20px; 
-  border-radius: 50%; 
 } 
 
 /* Contact Form */ 
