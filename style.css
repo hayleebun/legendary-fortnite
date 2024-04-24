@@ -36,7 +36,7 @@ p {
 } 
 
 .text-primary { 
-  color: #f7c08a; 
+  color: #008080; 
 } 
 
 .lead { 
@@ -54,7 +54,7 @@ p {
 } 
 
 .btn:hover { 
-  background: #f7c08a; 
+  background: #008080; 
   color: #333; 
 } 
 
@@ -240,7 +240,7 @@ p {
 
 #contact-form textarea:focus { 
   outline: none; 
-  border-color: #f7c08a; 
+  border-color: #008080; 
 } 
 
 table, th, td {
