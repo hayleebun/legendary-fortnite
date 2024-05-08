@@ -74,7 +74,8 @@
 
     <script>
         // Function to validate the contact form.
-        function validateForm(event){
+        // Event listener
+            document.getElementById('contactForm'). addEventListener('submit', function(event)) {
             event.preventDefault(); // Prevent the form from submitting
 
             var name = document.getElementById('name'). value.trim();
@@ -98,8 +99,6 @@
             alert ('Form submitted successfully!');
             document.getElementById('contactForm').reset(); // Clear form fields
         }
-            // Event listener
-            document.getElementById('contactForm'). addEventListener('submit, validateForm');
             
     </script>
 </body>
