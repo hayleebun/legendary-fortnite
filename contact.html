@@ -34,7 +34,7 @@
       </nav>
     </header>
     <section id="contact-form" class="py-3">
-        <div class="container">
+        <div class="contrainer">
             <h1 class="l-heading">Contact Us</h1>
             <p>Please fill out the form below to contact us.</p>
             <form action="process.php">
@@ -71,5 +71,36 @@
     <footer id="main-footer">
         <p>Legendary Fortnite &copy; 2024, All Rights Reserved</p>
     </footer>
+
+    <script>
+        // Function to validate the contact form.
+        function validateForm(event){
+            event.preventDefault(); // Prevent the form from submitting
+
+            var name = document.getElementById('name'). value.trim();
+            var email = document.getElementById('email'). value.trim();
+            var message = document.getElementById('message'). value.trim();
+
+            if(name === '' || email === '' || message === '') {
+                response.innerHTML = '<p class= "error">Please fill in all fields</p>';
+                return;
+            }
+
+            // Validate email format.
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+
+                alert ('Please enter a valid email address');
+                return;
+            }
+
+            // If all validations pass, submit the form.
+            alert ('Form submitted successfully!');
+            document.getElementById('contactForm').reset(); // Clear form fields
+        }
+            // Event listener
+            document.getElementById('contactForm'). addEventListener('submit, validateForm');
+            
+    </script>
 </body>
 </html>
