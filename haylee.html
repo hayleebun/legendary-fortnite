@@ -8,6 +8,29 @@
     <meta name="keywords" content="fortnite, group, project, group project">
     <link rel="stylesheet" href="style.css">
     <title>Legendary Fortnite</title>
+    <style> 
+      .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .box{
+        width: calc(33.33% - 20px);
+        background-color: antiquewhite;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      @media screen and (max-width: 768px){
+        .comtainer{
+          flex-direction: column;
+        }
+        .box{
+          width: 100%;
+        }
+    }
+    </style>
 </head>
   <body> 
 
@@ -42,6 +65,16 @@
         
       </ul>
 </section>
+
+  <div class="container">
+    <div class="box">
+      <h2>Box 1</h2>
+        <p>Problem Understanding: The first step is to clearly understand the problem that needs to be solved and the objectives of the system. This includes defining performance metrics such as speedm accuracy, resource usage, and scalability. </p>
+    </div>
+    <div class="box">
+      <h2>Box 2</h2>
+        <p>Algorithm Design: Based on the problem understanding, design an algorithm that addresses the requrements while optimizing performance. This may involve choosing the appropriate data structure, selecting efficient algorithm, and designing algorithms with low time and space complexity</p>
+    </div>
   
 <section id="main">
   <h2>Karaoke</h2>
