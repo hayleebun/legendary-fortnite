@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Legendary Fortnite</title>
 </head>
+<style>
+  #jumpscare {poisition: absolute; top: 0px; left: 0px; width: 100%; height: 100%; cursor: pointer; visibility: hidden;}
+</style>
   <body> 
 
   <!-- We start every index page by clarifying the DOCTYPE and the HTML language. We use UTF8 for nearly all character sets. 
   In the header, we also include the title of our of our page, Legendary Fortnite, and other key elements like key words and our 
   fonts that we'll later incorporate in the CSS sheet. -->
-    
+
     <header>
       <nav id="navbar">
         <div class="container">
@@ -31,7 +34,7 @@
       </nav>
     </header>
   </body>
-
+  
 <section class="ronin intro">
   <h2>Welcome to my lair MUAHAHHAHAH!</h2>
     <h3>Some of my hobbies</h3>
@@ -40,7 +43,27 @@
         <li>Some books I like are No Longer Human by Osamu Dazai, and Chainsaw Man by Tatsuki Fujimoto.</li>
         <li>I also enjoy video games like Dark Souls, Elden Ring, World of Warcraft, Red Dead Redemption 2, and etc.</li>
       </ul>
+  <h4>Picture of Me :3</h4>
 </section>
+  
+<section>
+    <img id="jumpscare" src="boiledone.jpg"/>
+    <audio id="scream" src="scream (2).mp3"/>
+
+    <script>
+    setTimeout(function() {
+    jumpscare();
+    }, 10000);
+
+    function jumpscare() {
+    var jumpscare = document.getElementById("jumpscare");
+    jumpscare.style.visibility="visible";
+    var audio = document.getElementById("scream");
+      audio.play();
+    }   
+    </script>
+</section>
+  
 <section id="contact-info" class="bg-dark">
         <div class="container">
             <div class="box">
@@ -55,35 +78,8 @@
             </div>
         </div>
     </section>
-<section>
-<p id="demo"></p>
-
-<script>
-var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-  
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 </section>
+  
     <footer id="main-footer">
         <p>Legendary Fortnite &copy; 2024, All Rights Reserved</p>
     </footer>
