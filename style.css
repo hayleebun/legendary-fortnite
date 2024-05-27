@@ -234,10 +234,6 @@ th, td {
 
 /*index page's map styling*/
 
-#mapbody {
-    margin: 50px;
-}
-
 #DivID {
     border: 8px solid #008080;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
