@@ -30,6 +30,36 @@
         </div>
       </nav>
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function GFG() {
+          let CustomOp = {
+              center: new google.maps.LatLng(
+                45.735759, -122.783844),
+              zoom:16,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+
+          let map = new google.maps.Map(
+              document.getElementById("DivID"),
+              CustomOp
+        );
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Function that executes when page is loaded -->
+
+  <body onload="GFG()">
+    <center>
+      <h1 style="color: rgb(24, 134, 24)">Gay Lake</h1>
+      <h3>Google Maps</h3>
+      <!-- Basic Container -->
+      <div id="DivID" style="width: 800px; height: 500px"></div>
+    </center>
+  </body>
+
 <!--We structured our navigation bar in the header, including links to each group member's personalized pages, our contact information,
 and the fun bonus page that we decided to include. These elements are in an unordered list format. --> 
 <section id="contact-info" class="bg-dark">
