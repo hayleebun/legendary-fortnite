@@ -73,32 +73,33 @@
     </footer>
 
     <script>
-       <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form from submitting the traditional way
+        event.preventDefault(); 
 
         var name = document.getElementById('name').value.trim();
         var email = document.getElementById('email').value.trim();
         var message = document.getElementById('message').value.trim();
-        var response = document.getElementById('response'); // Define response element
+        var response = document.getElementById('response'); 
 
         if (name === '' || email === '' || message === '') {
             response.innerHTML = '<p class="error">Please fill in all fields</p>';
             return;
         }
-// Validate email format.
+
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address');
             return;
         }
 
-        // If all validations pass, submit the form.
+
         alert('Form submitted successfully!');
         document.getElementById('contactForm').reset(); // Clear form fields after successful submission
     }
 </script>
-            
-    </script>
+
+<script>
+    
+</script>
 </body>
 </html>
