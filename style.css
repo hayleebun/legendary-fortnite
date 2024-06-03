@@ -256,25 +256,25 @@ th, td {
 } 
 /* Dark Mode Slider */
 label {
-	width:500px;
-	height:200px;
+	width:250px;
+	height:100px;
 	position: relative;
 	display: block;
 	background: #ebebeb;
-	border-radius: 200px;
+	border-radius: 100px;
 	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
 	cursor: pointer;
 	transition: 0.3s;
 }
 label:after {
 	content: "";
-	width:180px;
-	height: 180px;
+	width:90px;
+	height: 90px;
 	position: absolute;
-	top:10px;
-	left:10px;
-	background: linear-gradient(180deg,#ffcc89,#d8860b);
-	border-radius: 180px;
+	top:5px;
+	left:5px;
+	background: linear-gradient(90deg,#ffcc89,#d8860b);
+	border-radius: 90px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 	transition: 0.3s;
 }
@@ -287,12 +287,12 @@ input:checked + label {
 	background: #242424;
 }
 input:checked + label:after {
-	left:490px;
+	left:245px;
 	transform: translateX(-100%);
-	background: linear-gradient(180deg,#777,#3a3a3a);
+	background: linear-gradient(90deg,#777,#3a3a3a);
 }
 label:active:after{
-	width: 260px;
+	width: 130px;
 }
 
 input:checked + label + .background {
@@ -300,17 +300,17 @@ input:checked + label + .background {
 }
 label svg {
 	position: absolute;
-	width: 120px;
-	top:40px;
-	z-index: 100;
+	width: 60px;
+	top:20px;
+	z-index: 50;
 }
 label svg.sun {
-	left:40px;
+	left:20px;
 	fill:#fff;
 	transition: 0.3s;
 }
 label svg.moon {
-	left:340px;
+	left:170px;
 	fill:#7e7e7e;
 	transition: 0.3s;
 }
